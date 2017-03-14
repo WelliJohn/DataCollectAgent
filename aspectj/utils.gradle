@@ -1,0 +1,34 @@
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+def ajc(String androidbootClassFiles,JavaCompile javaCompile){
+    String[] args = ["-showWeaveInfo",
+                     "-1.8", //1.8是为了兼容java 8。请根据自己java的版本合理设置它
+                     "-inpath",javaCompile.destinationDir.toString(),
+                     "-aspectpath",javaCompile.classpath.asPath,
+                     "-d",javaCompile.destinationDir.toString(),
+                     "-classpath",javaCompile.classpath.asPath,
+                     "-bootclasspath", androidbootClassFiles]
+    MessageHandlerhandler = new MessageHandler(true);
+    new Main().run(args,handler)
+
+    deflog = project.logger
+    for(IMessage message : handler.getMessages(null, true)) {
+        switch (message.getKind()) {
+            case IMessage.ABORT:
+            case IMessage.ERROR:
+            case IMessage.FAIL:
+                log.error message.message, message.thrown
+                throw message.thrown
+                break;
+            case IMessage.WARNING:
+            case IMessage.INFO:
+                log.info message.message, message.thrown
+                break;
+            case IMessage.DEBUG:
+                log.debug message.message, message.thrown
+                break;
+        }
+    }
+}
