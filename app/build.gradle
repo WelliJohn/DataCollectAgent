@@ -83,6 +83,7 @@ variants.all { variant ->
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':aspectj')
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

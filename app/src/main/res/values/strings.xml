@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DataCollectAgent</string>
+    <string name="test">我是测试文本</string>
 </resources>

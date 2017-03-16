@@ -1,6 +1,7 @@
 package datacollect.jww.com.datacollectagent;
 
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 /**
  * @author: JiangWeiwei
@@ -10,12 +11,9 @@ import android.support.v7.app.AppCompatActivity;
  */
 public class BaseActivity extends AppCompatActivity{
     @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
+        Log.d("BaseActivity", "onResume: " + this.getClass().getName());
     }
+
 }
