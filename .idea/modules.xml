@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DataCollectAgent.iml" filepath="$PROJECT_DIR$/DataCollectAgent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajc/ajc.iml" filepath="$PROJECT_DIR$/ajc/ajc.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/aspectj/aspectj.iml" filepath="$PROJECT_DIR$/aspectj/aspectj.iml" />
     </modules>
