@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DataCollectAgent</string>
     <string name="test">我是测试文本</string>
+    <string name="jumpToSecondActivity">点击我跳转到第二个activity，注意控制台打印的日志!</string>
 </resources>
