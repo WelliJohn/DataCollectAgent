@@ -35,8 +35,6 @@ public class TraceAspect {
     public void onCallAfter(JoinPoint joinPoint) throws Throwable {
         Activity activity = null;
         //获取目标对象，截获运行时类型
-//        Log.e(TAG, "1111onCallAfter :" + joinPoint.getTarget() + "method : " + ((MethodSignature) joinPoint.getSignature()).getName());
-
         if (joinPoint.getTarget() instanceof Activity) {
             activity = ((Activity) joinPoint.getTarget());
             Log.e(TAG, "onCallAfter : " + activity.getClass().getName() + "method : " + ((MethodSignature) joinPoint.getSignature()).getName());
@@ -49,6 +47,9 @@ public class TraceAspect {
             }
         }
 
+        /**
+         * 这里是监听OnClickListener类型的事件
+         */
         if (joinPoint.getTarget() instanceof View.OnClickListener) {
             for (Object object : joinPoint.getArgs()) {
                 if (object instanceof View) {
