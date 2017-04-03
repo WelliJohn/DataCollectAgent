@@ -5,10 +5,13 @@ apply plugin: 'maven'
 dependencies {
     compile gradleApi()
     compile localGroovy()
+    compile 'com.android.tools.build:gradle:2.3.0'
+    compile "org.aspectj:aspectjtools:1.8.10"
 }
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 
@@ -29,23 +32,10 @@ apply plugin: "com.gradle.plugin-publish"
 // Apply other plugins here, e.g. java plugin for a plugin written in java or
 // the groovy plugin for a plugin written in groovy
 
-// If your plugin has any external java dependencies, Gradle will attempt to
-// downloaded them from JCenter for anyone using the plugins DSL
-// so you should probably use JCenter for dependency resolution in your own
-// project.
-repositories {
-    jcenter()
-}
-
-dependencies {
-    compile gradleApi()
-    compile localGroovy() //not needed for Java plugins
-    // other dependencies that your plugin requires
-}
 
 // Unless overridden in the pluginBundle config DSL, the project version will
 // be used as your plugin version when publishing
-version = "1.2"
+version = "1.5"
 group = "com.foo.myplugin"
 
 // The configuration example below shows the minimum required properties
