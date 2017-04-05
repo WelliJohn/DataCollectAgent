@@ -24,12 +24,14 @@ class AjcPlugin implements Plugin<Project> {
         } else {
             throw new GradleException("The 'android' or 'android-library' plugin is required.")
         }
+        println("WelliJohn,compile")
 
         variants.all { variant ->
             if (!variant.buildType.isDebuggable()) {
                 log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
                 return;
             }
+            println("WelliJohn,compile start")
 
             JavaCompile javaCompile = variant.javaCompile
             javaCompile.doLast {
@@ -63,6 +65,8 @@ class AjcPlugin implements Plugin<Project> {
                     }
                 }
             }
+            println("WelliJohn,compile finish")
+
         }
     }
 }
