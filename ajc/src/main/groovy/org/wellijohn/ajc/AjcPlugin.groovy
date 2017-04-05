@@ -14,6 +14,9 @@ class AjcPlugin implements Plugin<Project> {
     void apply(Project project) {
         final def variants
         final def log = project.logger
+        println("WelliJohn,start")
+        log.debug "WelliJohn args: "
+
         if (project.plugins.hasPlugin(AppPlugin)) {
             variants = project.android.applicationVariants
         } else if (project.plugins.hasPlugin(LibraryPlugin)) {
