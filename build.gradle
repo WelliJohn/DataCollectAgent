@@ -11,7 +11,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.1'
         classpath 'org.aspectj:aspectjtools:1.8.10'
-        classpath "gradle.plugin.com.foo.myplugin:ajc:1.5"
+        classpath "gradle.plugin.com.foo.myplugin:ajc:2.0.2"
     }
 }
 
