@@ -43,6 +43,7 @@ class AjcPlugin implements Plugin<Project> {
                                  "-classpath", javaCompile.classpath.asPath,
                                  "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
                 log.debug "ajc args: " + Arrays.toString(args)
+                println("江伟维,compile")
 
                 MessageHandler handler = new MessageHandler(true);
                 new Main().run(args, handler);
