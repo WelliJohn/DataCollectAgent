@@ -6,7 +6,6 @@ import android.util.Log;
 /**
  * @author: JiangWeiwei
  * @time: 2017/3/14-16:19
- * @email: jiangweiwei@qccr.com
  * @desc:
  */
 public class BaseActivity extends AppCompatActivity{
