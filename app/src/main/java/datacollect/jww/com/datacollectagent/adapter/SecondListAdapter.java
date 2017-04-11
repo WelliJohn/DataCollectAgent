@@ -11,7 +11,6 @@ import datacollect.jww.com.datacollectagent.R;
 /**
  * @author: JiangWeiwei
  * @time: 2017/3/16-16:04
- * @email: jiangweiwei@qccr.com
  * @desc:
  */
 public class SecondListAdapter extends RecyclerView.Adapter<SecondListAdapter.ViewHolder> {
