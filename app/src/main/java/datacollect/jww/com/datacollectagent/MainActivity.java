@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         tv = (TextView) findViewById(R.id.tv);
         tv.setOnClickListener(this);
+        tv.setTag(11111);
     }
 
     @Override

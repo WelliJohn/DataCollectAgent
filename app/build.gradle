@@ -44,4 +44,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support:recyclerview-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'wellijohn.org.android3dwheelview:android3dwheelview:1.0.0'
 }

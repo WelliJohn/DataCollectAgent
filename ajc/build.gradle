@@ -1,6 +1,7 @@
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
+//apply from: './jfrog.gradle'
 
 dependencies {
     compile gradleApi()
@@ -8,6 +9,8 @@ dependencies {
     compile 'com.android.tools.build:gradle:2.3.0'
     compile "org.aspectj:aspectjtools:1.8.10"
 }
+
+
 
 repositories {
     mavenCentral()
@@ -35,7 +38,7 @@ apply plugin: "com.gradle.plugin-publish"
 
 // Unless overridden in the pluginBundle config DSL, the project version will
 // be used as your plugin version when publishing
-version = "2.0.5"
+version = "2.0.9.18"
 group = "com.foo.myplugin"
 
 // The configuration example below shows the minimum required properties
@@ -43,8 +46,8 @@ group = "com.foo.myplugin"
 pluginBundle {
     website = 'http://www.gradle.org/'
     vcsUrl = 'https://github.com/gradle/gradle'
-    description = 'Greetings from here!'
-    tags = ['greetings', 'salutations']
+    description = 'aspecjx from here!'
+    tags = ['aspecjx', 'nebula']
 
     plugins {
         greetingsPlugin {
@@ -53,3 +56,5 @@ pluginBundle {
         }
     }
 }
+
+

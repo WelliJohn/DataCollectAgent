@@ -54,6 +54,7 @@ public class TraceAspect {
             for (Object object : joinPoint.getArgs()) {
                 if (object instanceof View) {
                     View v = (View) object;
+                    Log.d(TAG, "拿到的tag的值: "+v.getTag());
                     while (!(v instanceof ContentFrameLayout)) {
                         Log.d(TAG, "每个层级的view的onCallAfter: " + v.getClass());
                         v = (View) v.getParent();

@@ -1,2 +1,1 @@
-include ':app', ':aspectj'
-//, ':ajc'
+include ':app', ':aspectj', ':ajc'

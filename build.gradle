@@ -9,9 +9,11 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'org.aspectj:aspectjtools:1.8.10'
         classpath "gradle.plugin.com.foo.myplugin:ajc:2.0.5"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
+
     }
 }
 
@@ -19,6 +21,8 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
+        maven { url "http://10.10.10.254:8081/artifactory/plugins-snapshot/" }
+        maven { url "http://10.10.10.254:8081/artifactory/plugins-release/" }
     }
 }
 
