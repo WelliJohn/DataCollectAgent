@@ -22,7 +22,7 @@ repositories {
 
 
 def gradleVersion = '1.0.0'
-group = 'com.qccr.ajc'
+group = 'org.wellijohn.ajc'
 
 
 artifactory {

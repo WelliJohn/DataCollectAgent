@@ -7,7 +7,7 @@ import android.os.Bundle;
 /**
  * @author: JiangWeiwei
  * @time: 2017/4/12-13:49
- * @email: jiangweiwei@qccr.com
+ * @email: wellijohn1991@gmail.com
  * @desc:
  */
 public class BaseApplication extends Application {
